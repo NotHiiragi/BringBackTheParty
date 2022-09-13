@@ -1,7 +1,5 @@
 #include "main.hpp"
 
-#include "UnityEngine/GameObject.hpp"
-
 static ModInfo modInfo; // Stores the ID and version of our mod, and is sent to the modloader upon startup
 
 // Loads the config from disk using our modInfo, then returns it for use
@@ -16,11 +14,6 @@ Logger& getLogger() {
     static Logger* logger = new Logger(modInfo);
     return *logger;
 }
-
-
-UnityEngine::GameObject* Party = UnityEngine::GameObject::Find(il2cpp_utils::newcsstr("AnniversaryWrapper"));
-
-Party->set_value(true);
 
 // Called at the early stages of game loading
 extern "C" void setup(ModInfo& info) {
