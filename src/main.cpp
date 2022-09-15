@@ -35,7 +35,7 @@ extern "C" void load() {
     custom_types::Register::AutoRegister();
 	
 	auto zenjector = ::Lapiz::Zenject::Zenjector::Get();
-    zenjector->Install<BringBackTheParty::PartyInstaler*>(::Lapiz::Zenject::Location::Menu);
+    zenjector->Install<BringBackTheParty::PartyInstaller*>(::Lapiz::Zenject::Location::Menu);
 	
     getLogger().info("Installing hooks...");
     // Install our hooks (none defined yet)
