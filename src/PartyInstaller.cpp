@@ -7,7 +7,7 @@
 
 DEFINE_TYPE(BringBackTheParty, PartyInstaller);
 
-void BringBackThePartyPartyInstaller::InstallBindings()
+void BringBackTheParty::PartyInstaller::InstallBindings()
 {
     auto container = get_Container();
 
