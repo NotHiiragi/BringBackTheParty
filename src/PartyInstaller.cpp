@@ -11,5 +11,5 @@ void BringBackTheParty::PartyInstaller::InstallBindings()
 {
     auto container = get_Container();
 
-    Lapiz::Zenject::ZenjectExtensions::FromNewComponentOnNewGameObject(container->BindInterfacesAndSelfTo<BringBackTheParty::PartyInstaller::PartyController*>())->AsSingle(),
+    Lapiz::Zenject::ZenjectExtensions::FromNewComponentOnNewGameObject(container->BindInterfacesAndSelfTo<BringBackTheParty::PartyController*>())->AsSingle(),
 }
