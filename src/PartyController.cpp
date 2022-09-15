@@ -10,8 +10,8 @@ void BringBackTheParty::PartyController::ctor() {
 }
 
 void BringBackTheParty::PartyController::Initialize() {
-  UnityEngine::GameObject* åarty = UnityEngine::GameObject::Find(il2cpp_utils::newcsstr("AnniversaryWrapper"));
+  UnityEngine::GameObject* party = UnityEngine::GameObject::Find(il2cpp_utils::newcsstr("AnniversaryWrapper"));
   
   party->SetActive(true);
 
-]
+}
