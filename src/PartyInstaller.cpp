@@ -1,4 +1,5 @@
 #include "PartyInstaller.hpp"
+#include "PartyController.hpp"
 #include "Zenject/ConcreteIdBinderGeneric_1.hpp"
 #include "Zenject/DiContainer.hpp"
 #include "Zenject/FromBinderNonGeneric.hpp"
@@ -11,5 +12,5 @@ void BringBackTheParty::PartyInstaller::InstallBindings()
 {
     auto container = get_Container();
 
-    Lapiz::Zenject::ZenjectExtensions::FromNewComponentOnNewGameObject(container->BindInterfacesAndSelfTo<BringBackTheParty::PartyController*>())->AsSingle(),
+    Lapiz::Zenject::ZenjectExtensions::FromNewComponentOnNewGameObject(container->BindInterfacesAndSelfTo<BringBackTheParty::PartyController*>())->AsSingle();
 }
