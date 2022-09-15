@@ -34,6 +34,11 @@
       "id": "lapiz",
       "versionRange": "^0.1.1",
       "additionalData": {}
+    },
+    {
+      "id": "custom-types",
+      "versionRange": "*",
+      "additionalData": {}
     }
   ],
   "additionalData": {}
