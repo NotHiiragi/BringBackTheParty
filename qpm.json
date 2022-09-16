@@ -29,6 +29,16 @@
       "id": "codegen",
       "versionRange": "^0.25.0",
       "additionalData": {}
+    },
+    {
+      "id": "lapiz",
+      "versionRange": "^0.1.1",
+      "additionalData": {}
+    },
+    {
+      "id": "custom-types",
+      "versionRange": "*",
+      "additionalData": {}
     }
   ],
   "additionalData": {}
