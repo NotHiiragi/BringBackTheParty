@@ -8,6 +8,6 @@ DECLARE_CLASS_CODEGEN(BringBackTheParty, PartyController, Zenject::IInitializabl
         
         DECLARE_INSTANCE_METHOD(void, Initialize);
         
-        DECLARE_CTOR(ctor);
+        DECLARE_DEFAULT_CTOR();
         DECLARE_SIMPLE_DTOR();
 )
