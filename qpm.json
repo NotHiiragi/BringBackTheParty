@@ -32,12 +32,12 @@
     },
     {
       "id": "lapiz",
-      "versionRange": "^0.1.1",
+      "versionRange": "*",
       "additionalData": {}
     },
     {
       "id": "custom-types",
-      "versionRange": "^0.15.18",
+      "versionRange": "*",
       "additionalData": {}
     }
   ],
