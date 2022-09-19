@@ -3,6 +3,7 @@
 #include "PartyController.hpp"
 #include "PartyInstaller.hpp"
 #include "lapiz/shared/zenject/Zenjector.hpp"
+#include "lapiz/shared/AttributeRegistration.hpp"
 
 static ModInfo modInfo; // Stores the ID and version of our mod, and is sent to the modloader upon startup
 
@@ -33,8 +34,9 @@ extern "C" void setup(ModInfo& info) {
 extern "C" void load() {
     il2cpp_functions::Init();
     custom_types::Register::AutoRegister();
+	Lapiz::Attributes::AutoRegister();
 	
-	auto zenjector = ::Lapiz::Zenject::Zenjector::Get();
+    auto zenjector = Lapiz::Zenject::Zenjector::Get();
     zenjector->Install<BringBackTheParty::PartyInstaller*>(::Lapiz::Zenject::Location::Menu);
 	
     getLogger().info("Installing hooks...");
