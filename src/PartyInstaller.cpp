@@ -6,7 +6,7 @@
 
 DEFINE_TYPE(BringBackTheParty, PartyInstaller);
 
-namespace BringBackThePaty {
+namespace BringBackTheParty {
     void PartyInstaller::InstallBindings(){
         auto container = get_Container();
 
