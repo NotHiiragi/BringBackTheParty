@@ -6,9 +6,10 @@
 
 DEFINE_TYPE(BringBackTheParty, PartyInstaller);
 
-void BringBackTheParty::PartyInstaller::InstallBindings()
-{
-    auto container = get_Container();
+namespace BringBackThePaty {
+    void PartyInstaller::InstallBindings(){
+        auto container = get_Container();
 
-    container->BindInterfacesAndSelfTo<BringBackTheParty::PartyController*>()->AsSingle();
+        container->BindInterfacesAndSelfTo<BringBackTheParty::PartyController*>()->AsSingle();
+    }
 }
